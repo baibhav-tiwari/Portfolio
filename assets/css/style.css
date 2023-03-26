@@ -1225,7 +1225,7 @@ section .container {
     z-index: 999999;
 }
 
-@media (max-width: 9992px) {
+@media (max-width: 992px) {
     .credits {
         text-align: center;
         padding: 10px;
