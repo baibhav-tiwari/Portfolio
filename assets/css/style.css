@@ -163,7 +163,7 @@ h6 {
 }
 
 #header .social-links a {
-    font-size: 16px;
+    font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-    background: #0097a7;
+    background: #000000;
 }
 
 @media (max-width: 992px) {
@@ -202,12 +202,12 @@ h6 {
 /* Header Top */
 
 #header.header-top {
-    height: 80px;
+    height: 70px;
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    background: transparent;
+    background: #00838f;
 }
 
 #header.header-top .social-links,
@@ -231,7 +231,7 @@ h6 {
 
 @media (max-width: 768px) {
     #header.header-top {
-        height: 60px;
+        height: 50px;
     }
     #header.header-top h1 {
         font-size: 26px;
@@ -302,7 +302,7 @@ h6 {
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
-    width: 25px;
+    width: 22px;
 }
 
 .navbar a:hover,
@@ -1229,12 +1229,12 @@ section .container {
     .credits {
         text-align: center;
         padding: 10px;
-        background: rgba(0, 0, 0, 0.8);
+        background: transparent;
     }
 }
 
 .credits a {
-    color: #0097a7;
+    color: #ffffff;
     transition: 0.3s;
 }
 
