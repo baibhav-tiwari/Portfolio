@@ -1,9 +1,67 @@
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #040404;
+    background: transparent;
     color: #fff;
     position: relative;
     background: transparent;
+}
+
+body {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00838f;
+    z-index: 9999;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.4) 30%, transparent 0);
+    background-size: 1000% 1000%;
+    background-position: center;
+    z-index: 9998;
+    pointer-events: none;
+    transition: all 0.3s ease-out;
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+}
+
+
+/* Add animation to cursor trail */
+
+.cursor-trail.active {
+    opacity: 1;
+    animation: cursorTrail 1s linear infinite;
+}
+
+@keyframes cursorTrail {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 0;
+    }
 }
 
 app {
@@ -18,7 +76,7 @@ app {
 body::before {
     content: "";
     position: fixed;
-    background: #040404 top right no-repeat;
+    background: #1C2331 top right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -51,11 +109,6 @@ h5,
 h6 {
     font-family: "Raleway", sans-serif;
 }
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 
 #header {
     transition: ease-in-out 0.3s;
@@ -154,7 +207,7 @@ h6 {
     left: 0;
     top: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: transparent;
 }
 
 #header.header-top .social-links,
@@ -184,11 +237,6 @@ h6 {
         font-size: 26px;
     }
 }
-
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 
 
 /**
@@ -336,11 +384,6 @@ h6 {
     position: relative;
 }
 
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-
 section {
     overflow: hidden;
     position: absolute;
@@ -360,7 +403,7 @@ section.section-show {
 }
 
 section .container {
-    background: rgba(0, 0, 0, 0.9);
+    background: transparent;
     padding: 30px;
 }
 
@@ -404,11 +447,6 @@ section .container {
     color: #fff;
 }
 
-
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
 .about-me .content h3 {
     font-weight: 700;
     font-size: 26px;
@@ -440,11 +478,6 @@ section .container {
 .about-me .content p:last-child {
     margin-bottom: 0;
 }
-
-
-/*--------------------------------------------------------------
-# Counts
---------------------------------------------------------------*/
 
 .counts {
     padding: 70px 0 60px;
@@ -523,16 +556,11 @@ section .container {
     background-color: #0097a7;
 }
 
-
-/*--------------------------------------------------------------
-# Interests
---------------------------------------------------------------*/
-
 .interests .icon-box {
     display: flex;
     align-items: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.08);
+    background: transparent;
     transition: ease-in-out 0.3s;
 }
 
@@ -552,13 +580,8 @@ section .container {
 }
 
 .interests .icon-box:hover {
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(10, 170, 188, 0.12);
 }
-
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
 
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
@@ -830,12 +853,12 @@ section .container {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
 }
 
 .portfolio .portfolio-wrap::before {
     content: "";
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
     position: absolute;
     left: 30px;
     right: 30px;
@@ -1022,11 +1045,17 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 
+#Contact {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .contact .info-box {
     color: #444444;
     padding: 15px;
     width: 60%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .contact .info-box i.bx {
