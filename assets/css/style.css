@@ -76,7 +76,7 @@ app {
 body::before {
     content: "";
     position: fixed;
-    background: #1C2331 top right no-repeat;
+    background: black top right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -832,8 +832,8 @@ section .container {
     font-weight: 600;
     line-height: 1;
     text-transform: uppercase;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.1);
+    color: #bac30c;
+    background: rgba(207, 204, 204);
     margin: 0 3px 10px 3px;
     transition: all 0.3s ease-in-out;
     border-radius: 4px;
@@ -1045,17 +1045,11 @@ section .container {
 # Contact
 --------------------------------------------------------------*/
 
-#Contact {
-    background-image: url('bg.png');
-    background-size: cover;
-    background-position: center;
-}
-
 .contact .info-box {
     color: #444444;
     padding: 15px;
     width: 60%;
-    background: rgba(0, 0, 0, 0.08);
+    background: transparent
 }
 
 .contact .info-box i.bx {
@@ -1226,12 +1220,12 @@ section .container {
     bottom: 0;
     padding: 15px;
     text-align: right;
-    font-size: 13px;
+    font-size: 30px;
     color: #fff;
     z-index: 999999;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 9992px) {
     .credits {
         text-align: center;
         padding: 10px;
