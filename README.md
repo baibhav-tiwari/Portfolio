@@ -1,7 +1,7 @@
 <h1>Portfolio Website Readme</h1>
 
 >check out the site here<br>
->[![portfolio](https://img.shields.io/badge/Portfolio-cyan)](https://baibhavtiwari.github.io/portfolio/) 
+>[![portfolio](https://img.shields.io/badge/Portfolio-cyan)](https://BaibhavTiwari.github.io/portfolio/) 
 
 <h2>Git Clone Instructions</h2>
 
